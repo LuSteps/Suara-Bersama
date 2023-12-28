@@ -11,7 +11,7 @@ import android.widget.ImageView;
 public class AboutActivity extends AppCompatActivity {
     ImageView navHome, navChat, navInfo, navAcc;
     FrameLayout navProfile;
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +22,8 @@ public class AboutActivity extends AppCompatActivity {
         navProfile = findViewById(R.id.frameHealthiconscit);
         navInfo = findViewById(R.id.imageSearch);
         navAcc = findViewById(R.id.imageUserOne);
+
+
 
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override

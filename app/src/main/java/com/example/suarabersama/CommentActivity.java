@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class CommentActivity extends AppCompatActivity {
     ImageView navHome, navChat, navInfo, navAcc;
     FrameLayout navProfile;
+    Button kirim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,8 @@ public class CommentActivity extends AppCompatActivity {
         navProfile = findViewById(R.id.frameHealthiconscit);
         navInfo = findViewById(R.id.imageSearch);
         navAcc = findViewById(R.id.imageUserOne);
+
+        kirim = findViewById(R.id.kirimbutton);
 
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,6 +64,13 @@ public class CommentActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent mainIntent = new Intent(CommentActivity.this, ProfileActivity.class);
                 startActivity(mainIntent);
+            }
+        });
+
+        kirim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Komentar anda telah ditambahkan!.", Toast.LENGTH_SHORT).show();
             }
         });
 

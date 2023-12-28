@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 public class CapresActivity extends AppCompatActivity {
     ImageView navHome, navChat, navInfo, navAcc;
     FrameLayout navProfile;
+
+    Button berpendapat;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,8 @@ public class CapresActivity extends AppCompatActivity {
         navProfile = findViewById(R.id.frameHealthiconscit);
         navInfo = findViewById(R.id.imageSearch);
         navAcc = findViewById(R.id.imageUserOne);
+
+        berpendapat = findViewById(R.id.btnMulaiBerpendapat);
 
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +63,14 @@ public class CapresActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent mainIntent = new Intent(CapresActivity.this, ProfileActivity.class);
+                startActivity(mainIntent);
+            }
+        });
+
+        berpendapat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(CapresActivity.this, CommentActivity.class);
                 startActivity(mainIntent);
             }
         });

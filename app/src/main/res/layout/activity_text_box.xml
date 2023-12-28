@@ -255,88 +255,72 @@
 
         </LinearLayout>
 
-        <FrameLayout android:id="@+id/navbarbawah"
+        <FrameLayout
+            android:id="@+id/frameBottombar"
             android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:background="@drawable/rectangle_bg_red_a400">
+            android:layout_width="match_parent" style="@style/groupStylered_A400">
 
-            <LinearLayout
-                android:id="@+id/linearRowhome"
+            <LinearLayout android:id="@+id/linearRowhome"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:orientation="horizontal">
+                android:layout_width="match_parent" android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/imageHome"
-                    android:layout_width="20dp"
+                    android:layout_width="22dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="14dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_home"
                     tools:ignore="ContentDescription"
                     tools:src="@drawable/img_home" />
-
-                <ImageView
-                    android:id="@+id/imageAntdesigncomm"
+                <ImageView android:id="@+id/imageAntdesigncomm"
                     android:layout_gravity="center"
-                    android:layout_height="24dp"
-                    android:layout_marginBottom="13dp"
-                    android:layout_marginStart="46dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+                    android:layout_marginBottom="11dp"
+                    android:layout_marginStart="52dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_width="30dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_antdesigncomm"
-                    tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_antdesigncomm" />
-
-                <FrameLayout
-                    android:id="@+id/frameHealthiconscit"
-                    android:layout_height="50dp"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_antdesigncomm"/>
+                <FrameLayout android:id="@+id/frameHealthiconscit"
+                    android:layout_height="45dp"
                     android:layout_marginStart="40dp"
                     android:layout_gravity="center"
-                    android:layout_width="50dp" style="@style/groupStylecornerRadius_1">
-
-                    <ImageView
-                        android:id="@+id/imageUser"
+                    android:layout_width="58dp" style="@style/groupStylecornerRadius_1">
+                    <ImageView android:id="@+id/imageUser"
                         android:layout_gravity="center"
-                        android:layout_height="37dp"
-                        android:layout_width="37dp"
+                        android:layout_height="42dp"
+                        android:layout_width="42dp"
                         android:src="@drawable/img_user_white_a700"
-                        tools:ignore="ContentDescription"
-                        tools:src="@drawable/img_user_white_a700" />
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_user_white_a700"/>
                 </FrameLayout>
-
-                <ImageView
-                    android:id="@+id/imageSearch"
+                <ImageView android:id="@+id/imageSearch"
                     android:layout_gravity="center"
-                    android:layout_height="22dp"
-                    android:layout_marginBottom="14dp"
-                    android:layout_marginStart="41dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="25dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_search"
-                    tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_search" />
-
-                <ImageView
-                    android:id="@+id/imageUserOne"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
+                <ImageView android:id="@+id/imageUserOne"
                     android:layout_gravity="center"
-                    android:layout_marginStart="43dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="17dp"
-                    android:layout_marginBottom="11dp"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="35dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_user"
-                    tools:ignore="ContentDescription"
-                    tools:src="@drawable/img_user" />
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>

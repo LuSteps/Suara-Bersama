@@ -5,12 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class ProfileActivity extends AppCompatActivity {
     ImageView navHome, navChat, navInfo, navAcc;
     FrameLayout navProfile;
+    Button save;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +25,8 @@ public class ProfileActivity extends AppCompatActivity {
         navProfile = findViewById(R.id.frameHealthiconscit);
         navInfo = findViewById(R.id.imageSearch);
         navAcc = findViewById(R.id.imageUserOne);
+
+        save = findViewById(R.id.button);
 
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,6 +60,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Profil anda telah disimpan.", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 //        navAcc.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -62,6 +74,8 @@ public class ProfileActivity extends AppCompatActivity {
 //                startActivity(mainIntent);
 //            }
 //        });
+
+
 
     }
 }
