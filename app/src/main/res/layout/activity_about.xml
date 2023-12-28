@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <FrameLayout android:id="@+id/frameAbout"
+           android:layout_height="wrap_content"
+           android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+
+           <LinearLayout
+               android:id="@+id/linearColumngroupeight"
+               android:layout_width="match_parent"
+               android:layout_height="793dp"
+               android:layout_gravity="top|start"
+               android:layout_marginBottom="10dp"
+               android:orientation="vertical">
+
+               <TextView
+                   android:id="@+id/TitleHome"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/rectangle_bg_red_a400"
+                   android:ellipsize="end"
+                   android:fontFamily="@font/lalezar"
+                   android:gravity="start"
+                   android:lineSpacingExtra="-12dp"
+                   android:paddingStart="15dp"
+                   android:paddingTop="16dp"
+                   android:paddingBottom="13dp"
+                   android:singleLine="false"
+                   android:text="SUARA\nBERSAMA"
+                   android:textColor="#FFFFFFFF"
+                   android:textFontWeight="400"
+                   android:textSize="20sp"
+                   tools:ignore="RtlSymmetry,UnusedAttribute" />
+
+               <TextView
+                   android:id="@+id/tentangKami"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginStart="33dp"
+                   android:layout_marginTop="23dp"
+                   android:layout_marginEnd="33dp"
+                   android:ellipsize="end"
+                   android:singleLine="true"
+                   android:text="Tentang Kami"
+                   android:textSize="20sp"
+                   android:textColor="#FF000000"
+                   android:fontFamily="@font/lalezar"
+                   android:textStyle="normal"
+                   android:background="#FFFFFFFF"
+                   android:padding="8dp" />
+
+
+
+               <TextView
+                   android:id="@+id/Description"
+                   android:layout_width="wrap_content"
+                   android:layout_height="120dp"
+                   android:layout_marginStart="25dp"
+                   android:layout_marginTop="15dp"
+                   android:layout_marginEnd="25dp"
+                   android:layout_marginBottom="5dp"
+                   android:background="@drawable/border_textview"
+                   android:elevation="4dp"
+                   android:fontFamily="@font/inter"
+                   android:gravity="center_horizontal"
+                   android:paddingTop="8dp"
+                   android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum, ante at condimentum convallis, nunc dui aliquam enim, in varius dolor est at metus. Cras elementum accumsan odio in scelerisque. In molestie metus vel metus tincidunt aliquam."
+                   android:textColor="#FF000000"
+                   android:textSize="13sp" />
+
+               <TextView
+                   android:id="@+id/DidukungOleh"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginStart="33dp"
+                   android:layout_marginTop="23dp"
+                   android:layout_marginEnd="33dp"
+                   android:layout_marginBottom="10dp"
+                   android:ellipsize="end"
+                   android:singleLine="true"
+                   android:text="DIDUKUNG OLEH"
+                   android:textSize="20sp"
+                   android:textColor="#FF000000"
+                   android:fontFamily="@font/lalezar"/>
+
+               <LinearLayout
+                   android:id="@+id/linearRow"
+                   android:layout_width="308dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="50dp"
+                   android:layout_marginTop="9dp"
+                   android:layout_marginEnd="30dp"
+                   android:gravity="start"
+                   android:orientation="horizontal">
+
+                   <ImageView
+                       android:id="@+id/imgKPU"
+                       android:layout_width="122dp"
+                       android:layout_height="100dp"
+                       tools:src="@drawable/img_image1" />
+
+                   <ImageView
+                       android:id="@+id/imgBawaslu"
+                       android:layout_width="153dp"
+                       android:layout_height="100dp"
+                       android:layout_marginStart="24dp"
+                       android:scaleType="fitXY"
+                       tools:ignore="ContentDescription"
+                       tools:src="@drawable/img_image2" />
+               </LinearLayout>
+
+               <LinearLayout
+                   android:id="@+id/linearRowkomisipemiliha"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="42dp"
+                   android:layout_marginTop="7dp"
+                   android:layout_marginEnd="42dp"
+                   android:gravity="start"
+                   android:orientation="horizontal">
+
+                   <TextView
+                       android:id="@+id/KPU"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="15dp"
+                       android:layout_marginBottom="1dp"
+                       android:ellipsize="end"
+                       android:text="Komisi Pemilihan\nUmum"
+                       android:textSize="15sp"
+                       android:textColor="#FF000000"
+                       android:fontFamily="@font/lalezar"/>
+
+                   <TextView
+                       android:id="@+id/Bawaslu"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginTop="1dp"
+                       android:layout_weight="0.5"
+                       android:ellipsize="end"
+                       android:fontFamily="@font/lalezar"
+                       android:text="Badan Pengawas\nPemilu"
+                       android:textColor="#FF000000"
+                       android:textSize="15sp" />
+               </LinearLayout>
+
+               <ImageView
+                   android:id="@+id/imgKominfo"
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginStart="33dp"
+                   android:layout_marginTop="45dp"
+                   android:layout_marginEnd="33dp"
+                   android:scaleType="fitXY"
+                   tools:ignore="ContentDescription"
+                   tools:src="@drawable/img_image3" />
+
+               <TextView
+                   android:id="@+id/Kominfo"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginStart="33dp"
+                   android:layout_marginTop="13dp"
+                   android:layout_marginEnd="33dp"
+                   android:ellipsize="end"
+                   android:singleLine="true"
+                   android:text="Kementrian Komunikasi dan Informasi"
+                   android:textSize="15sp"
+                   android:textColor="#FF000000"
+                   android:fontFamily="@font/lalezar"/>
+
+           </LinearLayout>
+
+           <FrameLayout
+               android:layout_gravity="bottom|start"
+               android:id="@+id/frameBottombar"
+               android:layout_height="wrap_content"
+               android:layout_width="match_parent"
+               style="@style/groupStylered_A400">
+
+               <LinearLayout android:id="@+id/linearRowhome"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginTop="5dp"
+                   android:layout_width="match_parent" android:orientation="horizontal">
+
+                   <ImageView
+                       android:id="@+id/imageHome"
+                       android:layout_width="22dp"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginStart="20dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginBottom="12dp"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/img_home"
+                       tools:ignore="ContentDescription"
+                       tools:src="@drawable/img_home" />
+                   <ImageView android:id="@+id/imageAntdesigncomm"
+                       android:layout_gravity="center"
+                       android:layout_height="27dp"
+                       android:layout_marginBottom="11dp"
+                       android:layout_marginStart="52dp"
+                       android:layout_marginTop="11dp"
+                       android:layout_width="30dp"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/img_antdesigncomm"
+                       tools:ignore="ContentDescription" tools:src="@drawable/img_antdesigncomm"/>
+                   <FrameLayout android:id="@+id/frameHealthiconscit"
+                       android:layout_height="45dp"
+                       android:layout_marginStart="40dp"
+                       android:layout_gravity="center"
+                       android:layout_width="58dp" style="@style/groupStylecornerRadius_1">
+                       <ImageView android:id="@+id/imageUser"
+                           android:layout_gravity="center"
+                           android:layout_height="42dp"
+                           android:layout_width="42dp"
+                           android:src="@drawable/img_user_white_a700"
+                           tools:ignore="ContentDescription" tools:src="@drawable/img_user_white_a700"/>
+                   </FrameLayout>
+                   <ImageView android:id="@+id/imageSearch"
+                       android:layout_gravity="center"
+                       android:layout_height="25dp"
+                       android:layout_marginBottom="12dp"
+                       android:layout_marginStart="46dp"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="25dp"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/img_search"
+                       tools:ignore="ContentDescription" tools:src="@drawable/img_search"/>
+                   <ImageView android:id="@+id/imageUserOne"
+                       android:layout_gravity="center"
+                       android:layout_height="34dp"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginEnd="20dp"
+                       android:layout_marginStart="50dp"
+                       android:layout_marginTop="8dp"
+                       android:layout_width="35dp"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/img_user"
+                       tools:ignore="ContentDescription" tools:src="@drawable/img_user"/>
+               </LinearLayout>
+           </FrameLayout>
+       </FrameLayout>
+   </ScrollView>
+</RelativeLayout>

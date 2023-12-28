@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="capresPageRowModel" type="com.example.suarabersama.modules.caprespage.data.model.CapresPageRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackkinerjaterbukt"
+        android:layout_height="wrap_content" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumnkinerjaterbukt"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10pxh"
+            android:layout_width="wrap_content"
+            android:orientation="vertical" style="@style/groupStylewhite_3">
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtKinerjaTerbukt"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{capresPageRowModel.txtKinerjaTerbukt}"
+                style="@style/txtLailaregular10" tools:text="@string/msg_kinerja_terbukt"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWawanSudrajat"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{capresPageRowModel.txtWawanSudrajat}"
+                style="@style/txtLailaregular5" tools:text="@string/lbl_wawan_sudrajat"/>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescriptionTwo"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent"
+                android:text="@{capresPageRowModel.txtDescriptionTwo}"
+                style="@style/txtLailaregular6" tools:text="@string/msg_lorem_ipsum_dol2"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/linearColumncarbonlocation"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylewhite_3">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowkinerjaterbuktOne"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_3pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnkinerjaterbuktOne"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.82"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtKinerjaTerbuktOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{capresPageRowModel.txtKinerjaTerbuktOne}"
+                        style="@style/txtLailaregular10" tools:text="@string/msg_kinerja_terbukt"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtWawanSudrajatOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{capresPageRowModel.txtWawanSudrajatOne}"
+                        style="@style/txtLailaregular5" tools:text="@string/lbl_wawan_sudrajat"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/imageCarbonlocation"
+                    android:layout_height="@dimen/_8pxh"
+                    android:layout_marginBottom="@dimen/_7pxv"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_width="@dimen/_6pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_carbonlocation"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_carbonlocation"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtSidoarjo"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_4pxv"
+                    android:layout_weight="0.15"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{capresPageRowModel.txtSidoarjo}"
+                    style="@style/txtInterextralight10" tools:text="@string/lbl_sidoarjo"/>
+            </LinearLayout>
+            <TextView android:gravity="center_horizontal"
+                android:id="@+id/txtDescriptionOne"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="match_parent"
+                android:text="@{capresPageRowModel.txtDescriptionOne}"
+                style="@style/txtLailaregular8" tools:text="@string/msg_lorem_ipsum_dol2"/>
+        </LinearLayout>
+    </FrameLayout>
+</layout>
