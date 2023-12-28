@@ -1,6 +1,8 @@
 package com.example.suarabersama;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +12,18 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class HomeActivity extends AppCompatActivity {
     ImageView navHome, navChat, navInfo, navAcc;
     FrameLayout navProfile;
     Button midInfo;
 
-
-    LinearLayout capres1, capres2, capres3;
+    ArrayList<String> nama =new ArrayList<String>(Arrays.asList("Anies Baswedan - Muhaimin Iskandar", "Prabowo Subianto - Gibran R.K.", "Ganjar Pranowo - Mahfud M.D."));
+    ArrayList<String> judul =new ArrayList<String>(Arrays.asList("Paslon No.1", "Paslon No.2", "Paslon No.3"));
+    RecyclerView paslon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,16 +38,11 @@ public class HomeActivity extends AppCompatActivity {
         navInfo = findViewById(R.id.imageSearch);
         navAcc = findViewById(R.id.imageUserOne);
 
-        capres1 = findViewById(R.id.linearColumnpaslonnoOne);
-//        capres2 = findViewById(R.id.)
-
-        //        navHome.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent mainIntent = new Intent(HomeActivity.this, HomeActivity.class);
-//                startActivity(mainIntent);
-//            }
-//        });
+        paslon = findViewById(R.id.recyclerViewPaslon);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        paslon.setLayoutManager(layoutManager);
+        HomeAdapter ad = new HomeAdapter(HomeActivity.this, nama, judul);
+        paslon.setAdapter(ad);
 
         midInfo.setOnClickListener(new View.OnClickListener() {
             @Override

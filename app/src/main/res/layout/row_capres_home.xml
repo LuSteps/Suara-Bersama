@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
 
     android:id="@+id/frameStackpaslonno01"
     android:layout_height="wrap_content"
@@ -30,6 +31,7 @@
             android:textSize="30sp"
             android:textColor="@color/black_900"
             android:fontFamily="@font/lalezar"/>
+
         <LinearLayout android:gravity="start"
             android:id="@+id/linearRowgroup"
             android:layout_height="wrap_content"
@@ -57,5 +59,16 @@
                 tools:ignore="ContentDescription"
                 tools:src="@drawable/img_group" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/namaPaslon"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Anies Baswedan - Muhaimin Iskandar"
+            android:layout_marginBottom="20dp"/>
     </LinearLayout>
 </FrameLayout>

@@ -73,7 +73,7 @@
                    android:fontFamily="@font/inter"
                    android:gravity="center_horizontal"
                    android:paddingTop="8dp"
-                   android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum, ante at condimentum convallis, nunc dui aliquam enim, in varius dolor est at metus. Cras elementum accumsan odio in scelerisque. In molestie metus vel metus tincidunt aliquam."
+                   android:text="Selamat datang di aplikasi info pemilihan presiden, sebuah platform inovatif yang didedikasikan untuk memberikan informasi terpercaya seputar pemilihan presiden dengan mudah dan cepat. Kami hadir dengan tujuan untuk memberikan akses yang transparan dan mendalam mengenai info dan forum pasangan calon presiden kepada masyarakat."
                    android:textColor="#FF000000"
                    android:textSize="13sp" />
 
@@ -107,7 +107,7 @@
                        android:id="@+id/imgKPU"
                        android:layout_width="122dp"
                        android:layout_height="100dp"
-                       tools:src="@drawable/img_image1" />
+                       android:src="@drawable/img_image1" />
 
                    <ImageView
                        android:id="@+id/imgBawaslu"
@@ -116,7 +116,7 @@
                        android:layout_marginStart="24dp"
                        android:scaleType="fitXY"
                        tools:ignore="ContentDescription"
-                       tools:src="@drawable/img_image2" />
+                       android:src="@drawable/img_image2" />
                </LinearLayout>
 
                <LinearLayout
@@ -165,7 +165,7 @@
                    android:layout_marginEnd="33dp"
                    android:scaleType="fitXY"
                    tools:ignore="ContentDescription"
-                   tools:src="@drawable/img_image3" />
+                   android:src="@drawable/img_image3" />
 
                <TextView
                    android:id="@+id/Kominfo"
