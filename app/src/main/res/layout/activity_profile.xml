@@ -45,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="33dp"
-                android:layout_marginTop="23dp"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="33dp"
                 android:ellipsize="end"
                 android:singleLine="true"
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_28pxh"
-                android:layout_marginTop="@dimen/_63pxv"
+                android:layout_marginTop="30dp"
                 android:layout_marginEnd="@dimen/_28pxh"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
