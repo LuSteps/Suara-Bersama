@@ -158,21 +158,20 @@
 
                     <Spinner
                         android:background="@drawable/layer_list_bg_white_a700_border_gray_100"
-                        android:gravity="center_horizontal"
                         android:id="@+id/spinneritem"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="23dp"
-                        android:layout_marginStart="23dp"
-                        android:layout_marginTop="7dp"
-                        android:layout_width="match_parent"
-                        tools:listitem="@layout/spinner_item"/>
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_width="match_parent"/>
 
                     <FrameLayout
                         android:id="@+id/textboxtuliskan"
                         android:layout_gravity="center_horizontal"
                         android:layout_height="254dp"
-                        android:layout_marginEnd="23dp"
-                        android:layout_marginStart="23dp"
+                        android:layout_marginEnd="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginStart="30dp"
                         android:layout_marginTop="35dp"
                         android:layout_width="314dp">
 
@@ -184,7 +183,9 @@
                             android:layout_marginBottom="30dp"
                             android:background="@drawable/rectangle_bg_white_a700_border_red_a400_radius_tl_4_tr_4"
                             android:ellipsize="end"
+                            android:gravity="center"
                             android:hint="Tulis Judul Artikel (minimal 3 kata)..."
+                           android:textColorHint="@color/black"
                             android:inputType="text"
                             android:paddingStart="8dp"
                             android:paddingTop="6dp"
@@ -192,13 +193,12 @@
                             android:paddingBottom="5dp"
                             android:singleLine="true"
                             android:textSize="10sp"
-                            android:textColorHint="@color/black"
+                            android:textColor="@color/black"
                             android:fontFamily="@font/inter"
                             tools:ignore="Autofill" />
 
                         <LinearLayout
                             android:id="@+id/tuliskanpendapatanda"
-                            android:background="@drawable/rectangle_bg_white_a700_border_red_a400_8f"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|start"
@@ -207,19 +207,17 @@
 
                             <EditText
                                 android:id="@+id/tuliskanpendapattext"
-                                android:layout_width="337dp"
-                                android:layout_height="154dp"
-                                android:layout_marginStart="9dp"
-                                android:layout_marginTop="15dp"
-                                android:layout_marginEnd="93dp"
+                                android:background="@drawable/rectangle_bg_white_a700_border_red_a400_8f"
+                                android:padding="30dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="183dp"
                                 android:layout_marginBottom="212dp"
-                                android:ellipsize="end"
                                 android:fontFamily="@font/inter"
-                                android:gravity="start"
+                                android:gravity="center"
+                                android:textColorHint="@color/black"
                                 android:hint="Tuliskan Pendapat anda (minimal 250 kata)..."
                                 android:singleLine="true"
-                                android:textColor="#000000"
-                                android:textFontWeight="400"
+                                android:textColor="@color/black"
                                 android:textSize="12sp" />
 
                         </LinearLayout>

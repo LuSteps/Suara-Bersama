@@ -420,7 +420,7 @@ Perlindungan Bagi Segenap Bangsa dan Memberikan Rasa Aman pada Seluruh Warga."
                 android:layout_marginTop="10dp"
                 android:gravity="top|center"
                 android:text="Ribuan orang telah menyampaikan aspirasinya terhadap calon ini. Sekarang giliranmu untuk ambil bagian!"
-                android:textSize="17dp"
+                android:textSize="17sp"
                 android:textColor="@color/black_900"
                 android:fontFamily="@font/laila"/>
 
@@ -444,19 +444,9 @@ Perlindungan Bagi Segenap Bangsa dan Memberikan Rasa Aman pada Seluruh Warga."
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerCapresPage"
-                itemSpace="@{@dimen/_30pxh}"
+                android:layout_margin="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="35dp"
-                android:layout_marginTop="45dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="25dp"
-                android:gravity="center_horizontal"
-                android:nestedScrollingEnabled="false"
-                android:orientation="vertical"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                tools:itemCount="3"
-                tools:listitem="@layout/row_capres_page" />
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

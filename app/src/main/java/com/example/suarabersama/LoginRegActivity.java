@@ -15,6 +15,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -31,7 +32,9 @@ public class LoginRegActivity extends AppCompatActivity {
 
     Button login;
     LinearLayout google;
+    EditText usernameLogin, passwordLogin;
 
+    public static String username;
     private SignInClient oneTapClient;
     private BeginSignInRequest signUpRequest;
     private static final int REQ_ONE_TAP = 2;  // Can be any integer unique to the Activity.
@@ -44,6 +47,8 @@ public class LoginRegActivity extends AppCompatActivity {
 
         login = findViewById(R.id.button5);
         google = findViewById(R.id.linearRowflatcoloricon);
+        usernameLogin = findViewById(R.id.etGroupTwentyNine);
+        passwordLogin = findViewById(R.id.etGroupTwentyEight);
 
         oneTapClient = Identity.getSignInClient(this);
         signUpRequest = BeginSignInRequest.builder()
@@ -59,6 +64,8 @@ public class LoginRegActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                username = usernameLogin.getText().toString();
+
                 Intent mainIntent = new Intent(LoginRegActivity.this, HomeActivity.class);
                 startActivity(mainIntent);
                 finish();
@@ -74,6 +81,9 @@ public class LoginRegActivity extends AppCompatActivity {
                         String idToken = credential.getGoogleIdToken();
                         if (idToken !=  null) {
                             String email = credential.getId();
+                            String name = credential.getDisplayName();
+
+                            username = name;
                             Toast.makeText(getApplicationContext(), "Email: "+email, Toast.LENGTH_SHORT).show();
                         }
                     } catch (ApiException e){

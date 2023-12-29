@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
+  <string-array name="spinner_array_comment">
+    <item>Paslon 1</item>
+    <item>Paslon 2</item>
+    <item>Paslon 3</item>
+  </string-array>
+
     <string name="app_name">suara_bersama</string>
     <string name="loading">Loading…</string>
   <string name="web_client_id">626054089728-91hahlr77crc7ln2b0qv99enkd3io34q.apps.googleusercontent.com</string>

@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
-    <data>
-        <variable name="capresPageRowModel" type="com.example.suarabersama.modules.caprespage.data.model.CapresPageRowModel"/>
-    </data>
-    <FrameLayout android:id="@+id/frameStackkinerjaterbukt"
-        android:layout_height="wrap_content" android:layout_width="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <FrameLayout
+        android:id="@+id/frameStackkinerjaterbukt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/border_textview">
         <LinearLayout android:id="@+id/linearColumnkinerjaterbukt"
             android:layout_gravity="start"
             android:layout_height="wrap_content"
@@ -46,55 +53,74 @@
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:orientation="vertical" style="@style/groupStylewhite_3">
-            <LinearLayout android:gravity="start"
+
+            <LinearLayout
                 android:id="@+id/linearRowkinerjaterbuktOne"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/_10pxh"
                 android:layout_marginStart="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_3pxv"
-                android:layout_width="match_parent" android:orientation="horizontal">
-                <LinearLayout android:gravity="start"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:gravity="start"
+                android:orientation="horizontal">
+
+                <LinearLayout
                     android:id="@+id/linearColumnkinerjaterbuktOne"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="0.82"
-                    android:layout_width="0dp" android:orientation="vertical">
-                    <TextView android:ellipsize="end"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <TextView
                         android:id="@+id/txtKinerjaTerbuktOne"
+                        style="@style/txtLailaregular10"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_10pxh"
-                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@{capresPageRowModel.txtKinerjaTerbuktOne}"
-                        style="@style/txtLailaregular10" tools:text="@string/msg_kinerja_terbukt"/>
-                    <TextView android:ellipsize="end"
+                        android:textSize="18sp"
+                        tools:text="@string/msg_kinerja_terbukt" />
+
+                    <TextView
                         android:id="@+id/txtWawanSudrajatOne"
+                        style="@style/txtLailaregular5"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="@dimen/_10pxh"
-                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
                         android:singleLine="true"
                         android:text="@{capresPageRowModel.txtWawanSudrajatOne}"
-                        style="@style/txtLailaregular5" tools:text="@string/lbl_wawan_sudrajat"/>
+                        android:textSize="10sp"
+                        tools:text="@string/lbl_wawan_sudrajat" />
                 </LinearLayout>
-                <ImageView android:id="@+id/imageCarbonlocation"
-                    android:layout_height="@dimen/_8pxh"
-                    android:layout_marginBottom="@dimen/_7pxv"
-                    android:layout_marginTop="@dimen/_6pxv"
+
+                <ImageView
+                    android:id="@+id/imageCarbonlocation"
                     android:layout_width="@dimen/_6pxh"
+                    android:layout_height="@dimen/_8pxh"
+                    android:layout_marginTop="@dimen/_6pxv"
+                    android:layout_marginBottom="@dimen/_7pxv"
                     android:scaleType="fitXY"
                     android:src="@drawable/img_carbonlocation"
-                    tools:ignore="ContentDescription" tools:src="@drawable/img_carbonlocation"/>
-                <TextView android:ellipsize="end"
+                    tools:ignore="ContentDescription"
+                    tools:src="@drawable/img_carbonlocation" />
+
+                <TextView
                     android:id="@+id/txtSidoarjo"
+                    android:textColor="@color/black_900_3f"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/_4pxv"
-                    android:layout_marginStart="@dimen/_4pxh"
-                    android:layout_marginTop="@dimen/_4pxv"
-                    android:layout_weight="0.15"
-                    android:layout_width="0dp" android:singleLine="true"
-                    android:text="@{capresPageRowModel.txtSidoarjo}"
-                    style="@style/txtInterextralight10" tools:text="@string/lbl_sidoarjo"/>
+                    android:layout_marginTop="4dp"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:text="@string/lbl_sidoarjo" />
             </LinearLayout>
-            <TextView android:gravity="center_horizontal"
+
+            <TextView
+                android:gravity="fill"
                 android:id="@+id/txtDescriptionOne"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_6pxv"
@@ -102,8 +128,9 @@
                 android:layout_marginStart="@dimen/_10pxh"
                 android:layout_marginTop="@dimen/_14pxv"
                 android:layout_width="match_parent"
+                android:textSize="10sp"
                 android:text="@{capresPageRowModel.txtDescriptionOne}"
                 style="@style/txtLailaregular8" tools:text="@string/msg_lorem_ipsum_dol2"/>
         </LinearLayout>
     </FrameLayout>
-</layout>
+</RelativeLayout>
