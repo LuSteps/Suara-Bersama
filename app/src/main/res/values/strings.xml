@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">suara_bersama</string>
     <string name="loading">Loading…</string>
+  <string name="web_client_id">626054089728-91hahlr77crc7ln2b0qv99enkd3io34q.apps.googleusercontent.com</string>
     <string name="no_internet_connection">No internet connection!</string>
 <string name="msg_tulis_judul_art">Tulis Judul Artikel (Minimal 3 Kata)...</string>
   <string name="lbl_misi">MISI</string>

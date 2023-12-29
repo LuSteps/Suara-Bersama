@@ -49,6 +49,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyViewHolder> 
             public void onClick(View view) {
                 // display a toast with person name on item click
                 Intent act = new Intent(view.getContext(), CapresActivity.class);
+                act.putExtra("nomor", position);
                 view.getContext().startActivity(act);
             }
         });

@@ -82,7 +82,7 @@
                 android:layout_marginEnd="30dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="21dp"
-                android:layout_height="200dp"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
                 android:orientation="horizontal"
                 android:background="@drawable/rectangle_bg_white_a700_radius_10">
@@ -100,7 +100,7 @@
 
                     <TextView
                         android:id="@+id/txtCharlie"
-                        android:layout_width="97dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:singleLine="true"
                         android:text="Charlie"
@@ -184,12 +184,12 @@
             <LinearLayout
                 android:id="@+id/frameStackchaplin"
                 android:layout_width="match_parent"
-                android:layout_height="270dp"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal">
 
 
@@ -207,7 +207,7 @@
 
                     <TextView
                         android:id="@+id/txtChaplin"
-                        android:layout_width="97dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:fontFamily="@font/laila"
@@ -217,7 +217,7 @@
                         android:textSize="23dp" />
 
                     <TextView
-                        android:id="@+id/txtCalonPresiden"
+                        android:id="@+id/txtCalonWaPresiden"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center"
@@ -225,7 +225,7 @@
                         android:fontFamily="@font/laila"
                         android:gravity="top|start"
                         android:singleLine="true"
-                        android:text="Calon Presiden"
+                        android:text="Calon Wakil Presiden"
                         android:textColor="@color/black_900"
                         android:textSize="12dp" />
 
@@ -243,7 +243,7 @@
                         android:textSize="15dp" />
 
                     <TextView
-                        android:id="@+id/txtWalikotaPeriod"
+                        android:id="@+id/txtWalikotaPeriod1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|center"
@@ -256,7 +256,7 @@
 
 
                     <TextView
-                        android:id="@+id/txtPendidikan"
+                        android:id="@+id/txtPendidikanTitle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="top|start"
@@ -269,7 +269,7 @@
                         android:textSize="15dp" />
 
                     <TextView
-                        android:id="@+id/txtS1Universitas"
+                        android:id="@+id/txtS1Universitas1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="bottom|start"
@@ -298,7 +298,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="35dp"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="7dp"
                 android:layout_width="wrap_content"
                 android:singleLine="true"
                 android:text="VISI &amp; MISI"
