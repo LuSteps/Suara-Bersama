@@ -1,6 +1,8 @@
 package com.example.suarabersama;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +12,7 @@ import android.widget.ImageView;
 
 public class AboutActivity extends AppCompatActivity {
     ImageView navHome, navChat, navInfo, navAcc;
+    ImageView kpu,bawaslu,kominfo;
     FrameLayout navProfile;
     
     @Override
@@ -23,7 +26,42 @@ public class AboutActivity extends AppCompatActivity {
         navInfo = findViewById(R.id.imageSearch);
         navAcc = findViewById(R.id.imageUserOne);
 
+        kpu = findViewById(R.id.imgKPU);
+        bawaslu = findViewById(R.id.imgBawaslu);
+        kominfo = findViewById(R.id.imgKominfo);
 
+        kpu.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kpu.go.id/");
+                Intent inte = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(inte);
+
+            }
+        });
+
+        bawaslu.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.bawaslu.go.id/");
+                Intent inte = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(inte);
+
+            }
+        });
+
+        kominfo.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                Uri uri = Uri.parse("https://www.kominfo.go.id/");
+                Intent inte = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(inte);
+
+            }
+        });
 
         navHome.setOnClickListener(new View.OnClickListener() {
             @Override
