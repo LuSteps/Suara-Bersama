@@ -1,7 +1,9 @@
 package com.example.suarabersama;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +14,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.Toast;
 
 import java.util.Arrays;
@@ -24,8 +27,12 @@ public class CommentActivity extends AppCompatActivity {
     Button kirim;
     EditText judulIsi, komenIsi;
 
+
     public static int selected = 0;
     public static String namaKomentar, kotaKomentar, isiKomentar, judulKomentar;
+
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,13 +119,6 @@ public class CommentActivity extends AppCompatActivity {
                 namaKomentar = LoginRegActivity.username;
                 kotaKomentar = "Jakarta";
 
-                if(judulKomentar.length()>0 && isiKomentar.length()>0){
-                    dbHandler.addData(Integer.parseInt(targetKomen.substring(targetKomen.length()-1)), namaKomentar, kotaKomentar, judulKomentar, isiKomentar);
-                    Toast.makeText(getApplicationContext(), "Komentar anda telah ditambahkan!.", Toast.LENGTH_SHORT).show();
-                } else{
-                    Toast.makeText(getApplicationContext(), "Judul dan Komentar Tidak Boleh Kosong!.", Toast.LENGTH_SHORT).show();
-                }
-
                 switch (targetKomen) {
                     case "Paslon 1":
                         selected = 0;
@@ -131,11 +131,17 @@ public class CommentActivity extends AppCompatActivity {
                         break;
                 }
 
+                CommentProfileFragment frag = new CommentProfileFragment();
+                frag.show(getSupportFragmentManager(), "Profile");
 
+                if(judulKomentar.length()>0 && isiKomentar.length()>0){
+                    dbHandler.addData(Integer.parseInt(targetKomen.substring(targetKomen.length()-1)), namaKomentar, kotaKomentar, judulKomentar, isiKomentar);
+                    Toast.makeText(getApplicationContext(), "Komentar anda telah ditambahkan!.", Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(getApplicationContext(), "Judul dan Komentar Tidak Boleh Kosong!.", Toast.LENGTH_SHORT).show();
+                }
                 Intent nextAct = new Intent(getApplicationContext(), CapresActivity.class).putExtra("fromComment", "TRUE");
                 startActivity(nextAct);
-
-
 
             }
         });

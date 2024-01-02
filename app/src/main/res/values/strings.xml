@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <resources>
-  <string-array name="spinner_array_comment">
-    <item>Paslon 1</item>
-    <item>Paslon 2</item>
-    <item>Paslon 3</item>
-  </string-array>
+    <string-array name="spinner_array_comment">
+        <item>Paslon 1</item>
+        <item>Paslon 2</item>
+        <item>Paslon 3</item>
+    </string-array>
 
     <string name="app_name">suara_bersama</string>
     <string name="loading">Loading…</string>
-  <string name="web_client_id">626054089728-91hahlr77crc7ln2b0qv99enkd3io34q.apps.googleusercontent.com</string>
+    <string name="web_client_id">626054089728-91hahlr77crc7ln2b0qv99enkd3io34q.apps.googleusercontent.com</string>
     <string name="no_internet_connection">No internet connection!</string>
-<string name="msg_tulis_judul_art">Tulis Judul Artikel (Minimal 3 Kata)...</string>
-  <string name="lbl_misi">MISI</string>
-  <string name="msg_suara_kita_pent">SUARA KITA
+    <string name="msg_tulis_judul_art">Tulis Judul Artikel (Minimal 3 Kata)...</string>
+    <string name="lbl_misi">MISI</string>
+    <string name="msg_suara_kita_pent">SUARA KITA
 PENTING!</string>
-  <string name="lbl_jenis_kelamin">Jenis Kelamin</string>
-  <string name="lbl_pendidikan">Pendidikan</string>
-  <string name="msg_suarakan_pendap">SUARAKAN
+    <string name="lbl_jenis_kelamin">Jenis Kelamin</string>
+    <string name="lbl_pendidikan">Pendidikan</string>
+    <string name="msg_suarakan_pendap">SUARAKAN
 PENDAPATMU:</string>
-  <string name="lbl_didukung_oleh">DIDUKUNG OLEH</string>
-  <string name="msg_hindari_penulis2">Hindari penulisan opini
+    <string name="lbl_didukung_oleh">DIDUKUNG OLEH</string>
+    <string name="msg_hindari_penulis2">Hindari penulisan opini
 diluar topik yang dipilih</string>
-  <string name="lbl_wawan_sudrajat">Wawan Sudrajat</string>
-  <string name="lbl_solo">Solo</string>
-  <string name="msg_lorem_ipsum_dol3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum, ante at condimentum convallis, nunc dui aliquam enim, in varius dolor est at metus. Cras elementum accumsan odio in scelerisque. In molestie metus vel metus tincidunt aliquam.</string>
-  <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed blandit libero volutpat sed cras ornare arcu. Aenean vel elit scelerisque mauris pellentesque pulvinar. Accumsan in nisl nisi scelerisque eu ultrices.</string>
-  <string name="lbl_log_in">LOG-IN</string>
-  <string name="msg_copyright_202">Copyright © 2023 - Suara Bersama</string>
-  <string name="msg_pelajari_seleng">Pelajari Selengkapnya 
+    <string name="lbl_wawan_sudrajat">Wawan Sudrajat</string>
+    <string name="lbl_solo">Solo</string>
+    <string name="msg_lorem_ipsum_dol3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin interdum, ante at condimentum convallis, nunc dui aliquam enim, in varius dolor est at metus. Cras elementum accumsan odio in scelerisque. In molestie metus vel metus tincidunt aliquam.</string>
+    <string name="msg_lorem_ipsum_dol2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed blandit libero volutpat sed cras ornare arcu. Aenean vel elit scelerisque mauris pellentesque pulvinar. Accumsan in nisl nisi scelerisque eu ultrices.</string>
+    <string name="lbl_log_in">LOG-IN</string>
+    <string name="msg_copyright_202">Copyright © 2023 - Suara Bersama</string>
+    <string name="msg_pelajari_seleng">Pelajari Selengkapnya
 tentang kami</string>
-  <string name="msg_suarakan_pendap2">SUARAKAN PENDAPATMU!</string>
-  <string name="lbl_chaplin">Chaplin</string>
-  <string name="lbl_suara_bersama">SUARA\u2028BERSAMA</string>
-  <string name="lbl_nama">Nama</string>
-  <string name="lbl_visi_misi">VISI &amp; MISI</string>
-  <string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</string>
-  <string name="msg_pasangan_calon">PASANGAN CALON No. #</string>
-  <string name="msg_s1_universitas2">S1 Universitas Indonesia
+    <string name="msg_suarakan_pendap2">SUARAKAN PENDAPATMU!</string>
+    <string name="lbl_chaplin">Chaplin</string>
+    <string name="lbl_suara_bersama">SUARA\u2028BERSAMA</string>
+    <string name="lbl_nama">Nama</string>
+    <string name="lbl_visi_misi">VISI &amp; MISI</string>
+    <string name="msg_lorem_ipsum_dol">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</string>
+    <string name="msg_pasangan_calon">PASANGAN CALON No. #</string>
+    <string name="msg_s1_universitas2">S1 Universitas Indonesia
 S2 Institut Teknologi Bandung</string>
-  <string name="msg_hindari_penulis">Hindari penulisan 
+    <string name="msg_hindari_penulis">Hindari penulisan
 yang bersifat
 ujaran kebencian</string>
-  <string name="lbl_riwayat_politik">Riwayat Politik</string>
-  <string name="msg_kementrian_komu">Kementrian Komunikasi dan Informasi</string>
-  <string name="msg_calon_wakil_pre">Calon Wakil Presiden</string>
-  <string name="msg_peningkatan_kua">Peningkatan Kualitas Manusia Indonesia.
+    <string name="lbl_riwayat_politik">Riwayat Politik</string>
+    <string name="msg_kementrian_komu">Kementrian Komunikasi dan Informasi</string>
+    <string name="msg_calon_wakil_pre">Calon Wakil Presiden</string>
+    <string name="msg_peningkatan_kua">Peningkatan Kualitas Manusia Indonesia.
 
 Struktur Ekonomi yang Produktif, Merata dan Berdaya Saing.
 
@@ -57,46 +57,48 @@ Penegakan Sistem Hukum yang Bebas Korupsi, Bermartabat dan Terpercaya.
 Perlindungan Bagi Segenap Bangsa dan Memberikan Rasa Aman pada Seluruh Warga.
 
 Pengelolaan Pemerintah yang Bersih, Efektif, dan Terpercaya.</string>
-  <string name="msg_e_mail_nomor">E-mail / Nomor Telepon</string>
-  <string name="msg_mulai_berpendap">Mulai Berpendapat</string>
-  <string name="msg_sign_in_with_go">Sign in with Google</string>
-  <string name="msg_opini_saya_untu">Opini saya untuk...</string>
-  <string name="msg_komisi_pemiliha">Komisi Pemilihan Umum</string>
-  <string name="msg_ribuan_orang_te">Ribuan orang telah menyampaikan aspirasinya terhadap calon ini. Sekarang giliranmu untuk ambil bagian!</string>
-  <string name="lbl_paslon_no">Paslon No. #</string>
-  <string name="lbl_email">Email</string>
-  <string name="lbl_calon_presiden">Calon Presiden</string>
-  <string name="msg_walikota_period">Walikota Periode 2009 - 2014
+    <string name="msg_e_mail_nomor">E-mail / Nomor Telepon</string>
+    <string name="msg_mulai_berpendap">Mulai Berpendapat</string>
+    <string name="msg_sign_in_with_go">Sign in with Google</string>
+    <string name="msg_opini_saya_untu">Opini saya untuk...</string>
+    <string name="msg_komisi_pemiliha">Komisi Pemilihan Umum</string>
+    <string name="msg_ribuan_orang_te">Ribuan orang telah menyampaikan aspirasinya terhadap calon ini. Sekarang giliranmu untuk ambil bagian!</string>
+    <string name="lbl_paslon_no">Paslon No. #</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_calon_presiden">Calon Presiden</string>
+    <string name="msg_walikota_period">Walikota Periode 2009 - 2014
 Gubernur Periode 2014 - 2019</string>
-  <string name="lbl_kirim">Kirim</string>
-  <string name="msg_walikota_period2">Walikota Periode 2006 - 2016
+    <string name="lbl_kirim">Kirim</string>
+    <string name="msg_walikota_period2">Walikota Periode 2006 - 2016
 Gubernur Periode 2014 - 2019</string>
-  <string name="lbl_ruang_pendapat">Ruang Pendapat</string>
-  <string name="lbl_andi_susilo">Andi Susilo</string>
-  <string name="lbl_balikpapan">Balikpapan</string>
-  <string name="msg_merakyat_dan_pe">Merakyat dan Peduli</string>
-  <string name="lbl_simpan">Simpan</string>
-  <string name="lbl_sidoarjo">Sidoarjo</string>
-  <string name="msg_s1_universitas">S1 Universitas Bina Nusantara
+    <string name="lbl_ruang_pendapat">Ruang Pendapat</string>
+    <string name="lbl_andi_susilo">Andi Susilo</string>
+    <string name="lbl_balikpapan">Balikpapan</string>
+    <string name="msg_merakyat_dan_pe">Merakyat dan Peduli</string>
+    <string name="lbl_simpan">Simpan</string>
+    <string name="lbl_sidoarjo">Sidoarjo</string>
+    <string name="msg_s1_universitas">S1 Universitas Bina Nusantara
 S2 Universitas Airlangga</string>
-  <string name="lbl_tentang_kami">TENTANG KAMI</string>
-  <string name="msg_kinerja_terbukt">Kinerja Terbukti</string>
-  <string name="lbl_akhlak_teruji">Akhlak Teruji</string>
-  <string name="msg_pasangan_calon2">Pasangan Calon No. #</string>
-  <string name="lbl_password">Password</string>
-  <string name="lbl_visi">VISI</string>
-  <string name="msg_tuliskan_pendap">Tuliskan Pendapat anda (minimal 250 kata)...</string>
-  <string name="lbl_tanggal_lahir">Tanggal Lahir</string>
-  <string name="msg_mencerdaskan_ke">Mencerdaskan kehidupan bangsa untuk bangsa yang berdaulat di mata internasional sehingga bisa hidup berkelanjutan.</string>
-  <string name="lbl_charlie">Charlie</string>
-  <string name="lbl_bambang_sutikno">Bambang Sutikno</string>
-  <string name="msg_cantumkan_data">Cantumkan data dan fakta
+    <string name="lbl_tentang_kami">TENTANG KAMI</string>
+    <string name="msg_kinerja_terbukt">Kinerja Terbukti</string>
+    <string name="lbl_akhlak_teruji">Akhlak Teruji</string>
+    <string name="msg_pasangan_calon2">Pasangan Calon No. #</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_visi">VISI</string>
+    <string name="msg_tuliskan_pendap">Tuliskan Pendapat anda (minimal 250 kata)...</string>
+    <string name="lbl_tanggal_lahir">Tanggal Lahir</string>
+    <string name="msg_mencerdaskan_ke">Mencerdaskan kehidupan bangsa untuk bangsa yang berdaulat di mata internasional sehingga bisa hidup berkelanjutan.</string>
+    <string name="lbl_charlie">Charlie</string>
+    <string name="lbl_bambang_sutikno">Bambang Sutikno</string>
+    <string name="msg_cantumkan_data">Cantumkan data dan fakta
 yang mendukung 
 opini Anda</string>
-  <string name="msg_badan_pengawas">Badan Pengawas Pemilu</string>
-  <string name="msg_setiap_pendapat">Setiap pendapat yang
+    <string name="msg_badan_pengawas">Badan Pengawas Pemilu</string>
+    <string name="msg_setiap_pendapat">Setiap pendapat yang
 diberikan sepenuhnya merupakan
 tanggung jawab pengunggah</string>
-<string name="msg_please_enter_valid_pa">Please enter valid password</string>
-<string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <string name="msg_please_enter_valid_pa">Please enter valid password</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

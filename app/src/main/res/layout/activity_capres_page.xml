@@ -90,7 +90,7 @@
                 <LinearLayout
                     android:id="@+id/layoutNamaCapres"
                     android:layout_width="0dp"
-                    android:layout_height="200dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
                     android:layout_marginTop="7dp"
                     android:layout_marginBottom="12dp"
@@ -102,7 +102,6 @@
                         android:id="@+id/txtCharlie"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:singleLine="true"
                         android:text="Charlie"
                         android:textSize="23dp"
                         android:textColor="@color/black_900"
@@ -211,7 +210,6 @@
                         android:layout_height="wrap_content"
                         android:ellipsize="end"
                         android:fontFamily="@font/laila"
-                        android:singleLine="true"
                         android:text="Chaplin"
                         android:textColor="@color/black_900"
                         android:textSize="23dp" />
@@ -462,7 +460,8 @@ Perlindungan Bagi Segenap Bangsa dan Memberikan Rasa Aman pada Seluruh Warga."
             android:layout_height="match_parent"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
-            android:layout_width="match_parent" android:orientation="horizontal">
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageHome"
