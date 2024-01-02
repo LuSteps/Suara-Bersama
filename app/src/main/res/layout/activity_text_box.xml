@@ -54,6 +54,7 @@
                         android:layout_marginEnd="23dp"
                         android:layout_marginStart="23dp"
                         android:layout_marginTop="50dp"
+                        android:layout_marginBottom="20dp"
                         android:layout_width="match_parent"
                         android:singleLine="true"
                         android:text="SUARAKAN PENDAPATMU!"
@@ -63,10 +64,11 @@
                         android:textFontWeight="400"/>
 
                     <LinearLayout
-                        android:layout_width="365dp"
-                        android:layout_height="62dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="35dp"
                         android:layout_marginStart="35dp">
 
                         <TextView
@@ -98,17 +100,18 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="365dp"
-                        android:layout_height="87dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:layout_marginStart="30dp">
+
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginStart="35dp">
 
                         <TextView
                             android:id="@+id/cantumkandata"
                             android:layout_width="150dp"
                             android:layout_height="65dp"
                             android:layout_marginEnd="15dp"
-                            android:layout_marginStart="6dp"
                             android:layout_marginBottom="4dp"
                             android:background="@drawable/border_textview_red"
                             android:fontFamily="@font/inter"
