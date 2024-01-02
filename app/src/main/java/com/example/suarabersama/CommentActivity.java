@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import java.util.Arrays;
 
-public class CommentActivity extends AppCompatActivity {
+public class CommentActivity extends AppCompatActivity implements CommentProfileFragment.CommentProfileFragments{
 
     String targetKomen = "Paslon 1";
     ImageView navHome, navChat, navInfo, navAcc;
@@ -134,17 +134,21 @@ public class CommentActivity extends AppCompatActivity {
                 CommentProfileFragment frag = new CommentProfileFragment();
                 frag.show(getSupportFragmentManager(), "Profile");
 
-                if(judulKomentar.length()>0 && isiKomentar.length()>0){
+                if(judulKomentar.length()>0 && isiKomentar .length()>0){
                     dbHandler.addData(Integer.parseInt(targetKomen.substring(targetKomen.length()-1)), namaKomentar, kotaKomentar, judulKomentar, isiKomentar);
                     Toast.makeText(getApplicationContext(), "Komentar anda telah ditambahkan!.", Toast.LENGTH_SHORT).show();
                 } else{
                     Toast.makeText(getApplicationContext(), "Judul dan Komentar Tidak Boleh Kosong!.", Toast.LENGTH_SHORT).show();
                 }
-                Intent nextAct = new Intent(getApplicationContext(), CapresActivity.class).putExtra("fromComment", "TRUE");
-                startActivity(nextAct);
 
             }
         });
 
+    }
+
+    @Override
+    public void applyText(String namaKomen, String kotaKomen) {
+        namaKomentar = namaKomen;
+        kotaKomentar = kotaKomen;
     }
 }

@@ -57,24 +57,22 @@
 
 
             <TextView
-                android:ellipsize="end"
                 android:id="@+id/judulPaslon"
-                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="16dp"
-                android:layout_width="match_parent"
-                android:singleLine="true"
-
-                android:text="PASANGAN CALON NO #"
-                android:textSize="24sp"
-                android:textColor="@color/black_900"
+                android:layout_marginEnd="30dp"
+                android:ellipsize="end"
                 android:fontFamily="@font/lalezar"
+                android:gravity="center_horizontal"
+
+                android:singleLine="true"
+                android:text="PASANGAN CALON NO #"
+                android:textColor="@color/black_900"
                 android:textFontWeight="400"
+                android:textSize="24sp"
                 tools:targetApi="p" />
-
-
 
             <LinearLayout
                 android:gravity="start"

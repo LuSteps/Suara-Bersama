@@ -4,6 +4,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -24,7 +25,7 @@ public class CommentProfileFragment extends DialogFragment {
     public static String namaReq;
     public static String kotaReq;
 
-    public CommentProfileFragment listener;
+    public CommentProfileFragments listener;
 
     @NonNull
     @Override
@@ -48,16 +49,45 @@ public class CommentProfileFragment extends DialogFragment {
                 .setPositiveButton("Kirim", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        String namaTemp = nama.getText().toString();
-                        String kotaTemp = kota.getText().toString();
+                        namaReq = nama.getText().toString();
+                        kotaReq = kota.getText().toString();
 
-                        CommentActivity.namaKomentar = namaTemp;
-                        CommentActivity.kotaKomentar = kotaTemp;
+                        if(namaReq.equals("Anonim")){
+                            namaReq = CommentActivity.namaKomentar;
+                        }
+                        if(kotaReq.equals("Jakarta")){
+                            kotaReq = CommentActivity.kotaKomentar;
+                        }
+
+//                        CommentActivity.namaKomentar = namaReq;
+//                        CommentActivity.kotaKomentar = kotaReq;
+
+                        listener.applyText(namaReq, kotaReq);
+
+                        Intent nextAct = new Intent(getContext(), CapresActivity.class).putExtra("fromComment", "TRUE");
+                        startActivity(nextAct);
+
                     }
                 });
 
 
         return builder.create();
+    }
+
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+
+        try{
+            listener = (CommentProfileFragments) context;
+        } catch (ClassCastException e){
+            throw new ClassCastException(context.toString() +
+                    "must implement ExampleDialogListener");
+        }
+
+    }
+
+    public interface CommentProfileFragments{
+        void applyText(String nama, String kota);
     }
 
 }
