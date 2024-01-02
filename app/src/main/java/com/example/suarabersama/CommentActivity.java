@@ -31,6 +31,9 @@ public class CommentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text_box);
 
+        DBHandlerComment dbHandler = new DBHandlerComment(CommentActivity.this);
+
+
         navHome = findViewById(R.id.imageHome);
         navChat = findViewById(R.id.imageAntdesigncomm);
         navProfile = findViewById(R.id.frameHealthiconscit);
@@ -109,6 +112,13 @@ public class CommentActivity extends AppCompatActivity {
                 namaKomentar = LoginRegActivity.username;
                 kotaKomentar = "Jakarta";
 
+                if(judulKomentar.length()>0 && isiKomentar.length()>0){
+                    dbHandler.addData(Integer.parseInt(targetKomen.substring(targetKomen.length()-1)), namaKomentar, kotaKomentar, judulKomentar, isiKomentar);
+                    Toast.makeText(getApplicationContext(), "Komentar anda telah ditambahkan!.", Toast.LENGTH_SHORT).show();
+                } else{
+                    Toast.makeText(getApplicationContext(), "Judul dan Komentar Tidak Boleh Kosong!.", Toast.LENGTH_SHORT).show();
+                }
+
                 switch (targetKomen) {
                     case "Paslon 1":
                         selected = 0;
@@ -120,10 +130,12 @@ public class CommentActivity extends AppCompatActivity {
                         selected = 2;
                         break;
                 }
+
+
                 Intent nextAct = new Intent(getApplicationContext(), CapresActivity.class).putExtra("fromComment", "TRUE");
                 startActivity(nextAct);
 
-                Toast.makeText(getApplicationContext(), "Komentar anda telah ditambahkan!.", Toast.LENGTH_SHORT).show();
+
 
             }
         });

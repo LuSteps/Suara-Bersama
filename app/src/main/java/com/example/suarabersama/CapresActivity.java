@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +23,9 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class CapresActivity extends AppCompatActivity {
-    public static int nomor = 0;
+    public static int nomor = 1;
+
+    DBHandlerComment commentDB = new DBHandlerComment(CapresActivity.this);
 
     ArrayList<String> capres = new ArrayList<String>(Arrays.asList("Anies Baswedan", "Prabowo Subianto", "Ganjar Pranowo"));
     ArrayList<String> cawapres = new ArrayList<String>(Arrays.asList("Muhaimin Iskandar", "Gibran R.K.", "Mahfud M.D."));
@@ -38,20 +42,8 @@ public class CapresActivity extends AppCompatActivity {
 
     RecyclerView comments;
 
-    public static ArrayList<String> headline = new ArrayList<String>(Arrays.asList("Kinerja Terbukti", "Akhlak Teruji", "Kurang Professional"));
-    public static ArrayList<String> namaKomen = new ArrayList<String>(Arrays.asList("Wawan Sudrajat", "Andi Bumiputera", "Budi Soegija"));
-    public static ArrayList<String> komentar = new ArrayList<String>(Arrays.asList(
-            "Daerah yang dipimpin sebelumnya sudah bagus. Beri peluang untuk memperbaiki Indonesia bagi pasangan calon ini.",
-            "Sopan santun dari kedua kandidat tersebut merepresentasikan hati yang bersih. Rakyat butuh pemimpin yang bersih hatinya.",
-            "Hanya mampu beretorika dan kurang mampu mengantarkan performa yang bagus. Kurang layak maju memimpin Indonesia yang lebih luas."));
+    SQLiteDatabase commentDBView;
 
-    public static ArrayList<String> kota = new ArrayList<String >(Arrays.asList("Sidoarjo", "Pamulang", "Cikini"));
-
-    public void addData(ArrayList<String> target, String x){
-        if(x!=null){
-            target.add(x);
-        }
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +54,7 @@ public class CapresActivity extends AppCompatActivity {
         } else{
             Intent intent = getIntent();
             if (intent != null) {
-                nomor = intent.getIntExtra("nomor", 0);
+                nomor = intent.getIntExtra("nomor", 1);
             }
         }
 
@@ -82,21 +74,39 @@ public class CapresActivity extends AppCompatActivity {
         visi = findViewById(R.id.txtDescription);
         misi = findViewById(R.id.txtDescriptionOne);
 
-        addData(headline, CommentActivity.judulKomentar);
-        addData(namaKomen, CommentActivity.namaKomentar);
-        addData(kota, CommentActivity.kotaKomentar);
-        addData(komentar, CommentActivity.isiKomentar);
 
         CommentActivity.judulKomentar = null;
         CommentActivity.namaKomentar = null;
         CommentActivity.kotaKomentar = null;
         CommentActivity.isiKomentar = null;
 
+        String query = "SELECT * " +
+                "FROM Komentar " +
+                "WHERE pasangan_calon = " + (nomor+1);
+
+
+        commentDBView = commentDB.getReadableDatabase();
+        Cursor cursor = commentDBView.rawQuery(query, null);
+
+        ArrayList<String> komentar = new ArrayList<String>();
+        ArrayList<String> headline = new ArrayList<String>();
+        ArrayList<String> namaKomen = new ArrayList<String>();
+        ArrayList<String> kota = new ArrayList<String>();
+
+        if(cursor.moveToFirst()){
+            do{
+                headline.add(cursor.getString(5));
+                namaKomen.add(cursor.getString(3));
+                komentar.add(cursor.getString(4));
+                kota.add(cursor.getString(2));
+            }while(cursor.moveToNext());
+        }
+        cursor.close();
 
         comments = findViewById(R.id.recyclerCapresPage);
         LinearLayoutManager linlayman = new LinearLayoutManager(getApplicationContext());
         comments.setLayoutManager(linlayman);
-        CapresAdapter ad = new CapresAdapter(CapresActivity.this, headline, namaKomen, komentar, kota);
+        CapresAdapter ad = new CapresAdapter(CapresActivity.this,  headline, namaKomen, komentar, kota);
         comments.setAdapter(ad);
 
 

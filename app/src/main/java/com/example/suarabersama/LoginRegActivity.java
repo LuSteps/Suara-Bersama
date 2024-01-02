@@ -66,6 +66,10 @@ public class LoginRegActivity extends AppCompatActivity {
             public void onClick(View v) {
                 username = usernameLogin.getText().toString();
 
+                if(username.isEmpty()){
+                    username = "Anonim";
+                }
+
                 Intent mainIntent = new Intent(LoginRegActivity.this, HomeActivity.class);
                 startActivity(mainIntent);
                 finish();

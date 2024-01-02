@@ -71,11 +71,9 @@
 
                         <TextView
                             android:id="@+id/hindaripenulisanopini"
-                            android:layout_width="149dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="14dp"
-                            android:layout_marginBottom="10dp"
+                            android:layout_width="150dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="15dp"
                             android:background="@drawable/border_textview_red"
                             android:fontFamily="@font/inter"
                             android:gravity="center_horizontal"
@@ -87,11 +85,8 @@
 
                         <TextView
                             android:id="@+id/hindaripenulisan"
-                            android:layout_width="155dp"
+                            android:layout_width="150dp"
                             android:layout_height="50dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="26dp"
-                            android:layout_marginBottom="4dp"
                             android:background="@drawable/border_textview_red"
                             android:fontFamily="@font/inter"
                             android:gravity="center_horizontal"
@@ -110,11 +105,10 @@
 
                         <TextView
                             android:id="@+id/cantumkandata"
-                            android:layout_width="145dp"
-                            android:layout_height="71dp"
+                            android:layout_width="150dp"
+                            android:layout_height="65dp"
+                            android:layout_marginEnd="15dp"
                             android:layout_marginStart="6dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginEnd="6dp"
                             android:layout_marginBottom="4dp"
                             android:background="@drawable/border_textview_red"
                             android:fontFamily="@font/inter"
@@ -128,10 +122,8 @@
                         <TextView
                             android:id="@+id/setiappendapat"
                             style="@style/txtIntersemibold8"
-                            android:layout_width="155dp"
+                            android:layout_width="150dp"
                             android:layout_height="65dp"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginTop="9dp"
                             android:layout_marginEnd="4dp"
                             android:layout_marginBottom="8dp"
                             android:background="@drawable/border_textview_red"

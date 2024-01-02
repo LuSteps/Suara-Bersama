@@ -2,8 +2,12 @@ package com.example.suarabersama;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class DBHandlerComment extends SQLiteOpenHelper {
     private static final String DB_NAME = "CommentDB";
@@ -33,9 +37,29 @@ public class DBHandlerComment extends SQLiteOpenHelper {
                 + ISI_COL + " TEXT,"
                 + HEADLINE_COL + " TEXT)";
         db.execSQL(query);
+
+//        ArrayList<String> kota = new ArrayList<String >(Arrays.asList("Sidoarjo", "Pamulang", "Cikini"));
+//        ArrayList<String> headline = new ArrayList<String>(Arrays.asList("Kinerja Terbukti", "Akhlak Teruji", "Kurang Professional"));
+//        ArrayList<String> namaKomen = new ArrayList<String>(Arrays.asList("Wawan Sudrajat", "Andi Bumiputera", "Budi Soegija"));
+//        ArrayList<String> komentar = new ArrayList<String>(Arrays.asList(
+//                "Daerah yang dipimpin sebelumnya sudah bagus. Beri peluang untuk memperbaiki Indonesia bagi pasangan calon ini.",
+//                "Sopan santun dari kedua kandidat tersebut merepresentasikan hati yang bersih. Rakyat butuh pemimpin yang bersih hatinya.",
+//                "Hanya mampu beretorika dan kurang mampu mengantarkan performa yang bagus. Kurang layak maju memimpin Indonesia yang lebih luas."));
+//
+//        for(int i=0;i<headline.size();i++){
+//            String queryAdd = "INSERT INTO " + TABLE_NAME +
+//                    "(" +
+//                        (i+1) + ", " +
+//                        namaKomen.get(i) + ", " +
+//                        kota.get(i) + ", " +
+//                        headline.get(i) + ", " +
+//                        komentar.get(i) + ", " +
+//                    ")";
+//            db.execSQL(queryAdd);
+//        }
     }
 
-    public void addData(String paslon, String nama, String kota, String headline, String isi) {
+    public void addData(int paslon, String nama, String kota, String headline, String isi) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
@@ -55,4 +79,6 @@ public class DBHandlerComment extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
         onCreate(db);
     }
+
+
 }
