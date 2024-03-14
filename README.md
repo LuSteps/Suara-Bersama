@@ -1,4 +1,6 @@
 # Suara Bersama
+![image](https://github.com/LuSteps/Suara-Bersama/assets/89762688/9eb8c282-b955-4ddf-8f12-5f8182041e32)
+
 
 Overview:
 Suara Bersama is a mobile application designed to serve as a platform for young individuals to exchange views on the 2024 presidential candidates and future elections (local elections, legislative elections, etc.). It aims to facilitate discussions among young voters, providing them with a space to solidify their political choices. The application operates as a social media platform with local data storage.
